@@ -1,0 +1,78 @@
+
+* {
+    box-sizing: border-box;
+    border: 1px solid #1f2937;
+}
+body {
+    background-color: black;
+    margin: 50px;
+    padding: 0;
+
+}
+#generator {
+    background-color: #1f2937;
+    margin-top: 100px;
+    min-height: 550px;
+    min-width: 550px;
+    max-width: 600px;
+    margin: 10px auto;
+    overflow: hidden;
+    padding: 0px;
+
+} 
+.gen-heading {
+    color: white;
+    margin: 100px auto 0px 52px;
+    font-weight: 900;
+    font-size: 2rem
+}
+.heading-part2 {
+    color: #4adf86;
+    margin-top: 0px;
+    margin-left: 52px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+p {
+    margin-top: 0px;
+    margin-left: 52px;
+    color: lightgray;
+}
+#gen-btn {
+    margin: 30px auto 15px 52px;
+    padding: 8px;
+    background-color: #4adf86;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+#gen-btn:active {
+    background-color: #4affff;
+}
+hr {
+    width: 446px;
+    margin: 10px 52px;
+    border-color: #273549;
+}
+#pass1 {
+    margin-top: 20px;
+    margin-left: 52px;
+    height: 39px;
+    width: 211px;
+    border-radius: 5px;
+    border: none;
+    background-color: #273549;
+    cursor: pointer;
+    color: #10b981;
+}
+#pass2 {
+    border: none;
+    height: 39px;
+    margin-left: 20px;
+    width: 211px;
+    border-radius: 5px;
+    background-color: #273549;
+    cursor: pointer;
+    color: #10b981;
+}

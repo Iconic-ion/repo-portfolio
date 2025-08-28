@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box;
+    /* border: 1px dotted black; */
+}
+:root {
+    --icon-color: #2354d4;
+    --text-color: #1e293b;
+}
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* top nav bar with company logo  */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw; 
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    box-shadow: 2px 3px 3px rgba(0,0,0,0.3);
+    background-color: white;
+    z-index: 1000;
+    
+}
+.nav-btn {
+    border: none;
+    font-weight: 600;
+    
+}
+.nav-btn:hover {
+    transition-duration: 1200ms;
+    
+   
+    opacity: 0.4;
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+    
+}
+#icon {
+    font-weight: 900;
+    font-size: 1.5rem;
+    border: none;
+}
+#icon a {
+    color: var(--icon-color);
+}
+.nav-btn a {
+    color: var(--text-color);
+}
+/* Innovate your future message, buttons,  and team image */
+
+button {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 2px solid var(--icon-color);
+    background-color: white;
+    color: var(--icon-color);
+}
+.learn-more {
+    display: flex;
+    justify-content: flex-start;
+}
+.lm-btn {
+    color: white;
+    background-color: var(--icon-color);
+}
+.lm-btn:hover {
+    background-color: white;
+    color: var(--icon-color);
+} 
+
+main {
+    margin: 150px auto;
+    padding: 10px;
+    color: var(--text-color);
+    width: 90%;
+
+    /* z-index: -1; */
+    /* padding-top: 60px; */
+}
+#top {
+    margin-top: 8%;
+    width: 100%;
+    display: flex;
+}
+.innovate {
+    width: 80%; 
+    padding: 10px;
+    margin: 0 auto;
+}
+.innovate p {
+    text-align: justify;
+}
+.img-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     margin: 0 auto;
+}
+.image {
+    width: 98%;
+    padding: 10px;
+   
+}
+a {
+    text-decoration: none;
+    color: none;
+}
+
+
+/* Our core features cards  */
+
+#core {
+    margin-top: 5%;
+    padding: 5%;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: rgba(0,0,0,0.08);
+    background-image: url('./images/MCHammer.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    /* border: 8px inset black; */
+    
+}
+.core-heading {
+    color: white;
+    text-shadow: 2px 2px 2px rgb(0,255,0);
+    font-size: 2.5rem;
+}
+.core-cards {
+    display: flex;
+    justify-content: space-around;
+
+}
+.cards {
+    box-shadow: 3px 3px 4px 2px rgba(0,255,0,0.4);
+    border-radius: 10px;
+    border: 2px solid rgb(0,255,0);
+    width: 30%;
+    margin: 20px;
+    background-color: rgb(250, 250, 250);
+    padding: 15px;
+    /* border: 4px outset var(--icon-color); */
+}
+.card-emoji {
+    font-size: 3rem
+}
+.cards p {
+    font-size: 14px;
+}
+
+/*  About TechVenture section */
+
+#about {
+    display: flex;
+    margin: 10% auto;
+}
+.about-text {
+  width: 60%;
+  text-align: center;
+}
+.about-text p {
+    text-align: justify;
+    margin: 15px;
+}
+.stats {
+    display: flex;
+    justify-content: space-evenly;
+}
+.blue-stats {
+    color: var(--icon-color);
+    font-weight: 900;
+    font-size: 1.5rem
+}
+.code-img-block {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.code-img {
+    width: 100%;
+    height: 100%;
+    
+}
+/* grid section */
+#grid {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    display: grid;
+    gap: 0.75em;
+    grid-template-areas: "grid-header grid-header grid-header"
+                         "grid-img grid-main grid-main"
+                         "grid-img grid-start grid-start";
+}
+.grid-header {
+    text-align: center;
+    /* margin: 20px; */
+    font-size: 1.2em;
+    background-color: var(--icon-color);
+    color: white;
+    padding: 1.1em;
+    border-radius: 10px;
+    align-self: center;
+    grid-area: grid-header;
+}
+.grid-img {
+    border-radius: 10px;
+    height: 98%;
+    /* width: 90%; */
+    max-height: 400px;
+    max-width: 300px;
+    grid-area: grid-img;
+    margin: 0 auto;
+    
+
+}
+.grid-main {
+    grid-area: grid-main;
+    margin: 20px auto 0px;
+}
+.grid-start {
+    grid-area: grid-start;
+    margin-bottom: 60px;
+    border-radius: 10px;
+}
+.grid-start img:hover {
+    box-shadow: 0px 0px 10px 10px rgb(0,255,0);
+    transition: 1200ms;
+    
+}
+
+/* Footer with nav links */
+footer {
+    background-color: var(--text-color);
+    color: white;
+}
+#contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+#contact a {
+    color: white;
+}
+#contact div {
+    margin: 10px;
+}
+.copyright {
+    /* text-align: center; */
+    margin: 40px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5f84a1;
+    border-top: 1px solid #5f84a1;
+}
+@media only screen and (max-width:600px) {
+    nav {
+        display: block;
+    }
+  
+    .core-cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards {
+        width: 90%;
+        align-self: center;
+    }
+    #top {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    .image {
+        margin: auto;
+        width: 100%;
+    }
+    #about {
+        display: block;
+    }
+    .about-text {
+        width: 100%;
+    }
+    #grid {
+        grid-template-areas: "grid-header"
+                             "grid-img"
+                             "grid-main"
+                             "grid-start";
+        height: 950px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    #contact {
+        flex-direction: column;
+    }
+}

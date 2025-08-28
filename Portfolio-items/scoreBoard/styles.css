@@ -1,0 +1,98 @@
+.revalia-regular {
+  font-family: "Revalia", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+#score-board {
+    margin: 100px auto;
+    height: 385px;
+    width: 575px;
+    background-color: #1B244A;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Revalia", sans-serif;
+    border-radius: 5px;
+    box-shadow: 2px 3px 4px rgba(0,0,0,0.8);
+    border: 4px outset #0a355b;
+}
+.home-guest {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.score-box {
+    background-color: black;
+    color: #F94F6D;
+    width: 155px;
+    height: 120px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: space-evenly;
+    margin: 0px auto 18px;
+    font-size: 90px;
+    border-radius: 5px;
+    /* letter-spacing: 0.70rem; */
+}
+.add-points {
+    width: 155px;
+    height: 45px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.top {
+    color: white;
+    
+    text-align: center;
+    font-size: 42px;
+    text-shadow: 1px 2px 3px rgba(0,0,0,0.8);
+    margin: 60px auto 20px;
+   
+}
+.plus {
+    color:#9AABD8;
+    align-self: center;
+    font-size: 20px;
+    margin: 25px 0px;
+    padding: 10px;
+    border: 1px solid #9AABD8;
+    background-color: #1B244A;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.8);
+    /* opacity: 0.5; */
+}
+.plus:hover {
+    background-color: #9aabd8;
+    color: #F94F6D;
+    opacity: 0.85;
+    border: 1px solid #f94f6d;
+}
+.plus:active {
+    box-shadow: none;
+}
+.plus-one {
+    color:#9AABD8;
+    align-self: center;
+    font-size: 20px;
+    margin-top: 10px;
+    
+    border: 1px solid #9AABD8;
+    border-radius: 5px;
+    padding: 8px 10px;
+}j
