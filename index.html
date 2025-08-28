@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Broken+Fax&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[url(./images/bubbles.jpg)] max-w-4xl flex flex-col bg-blend-multiply b-8-white mx-auto bg-cover">
+   
+  <!-- header section with nav links to corresponding sections -->
+  
+  <header class="bg-indigo-200 bg-[url(./images/city-night.jpg)] bg-blend-multiply  hover:bg-white border-8 border-orange-400 rounded-sm bg-cover w-100% text-slate-50">
+        <h2 class="text-center p-10 text-white-400 ">.::.::A:.Portfolio::.. by:.:derek:::.</h2>
+        <h1 class="text-6xl text-orange-400 text-center p-8"><a href="#">iconicion</a></h1>
+        <nav class="w-100% flex justify-around list-none gap-x-2 m-2">
+            <li class="w-1/3 text-center border bg-cyan-600 hover:opacity-100 hover:border-orange-400 opacity-80 rounded-md"><a href="#">Home</a></li>
+            <li class="w-1/3 text-center border bg-cyan-600 hover:opacity-100 hover:border-orange-400 opacity-80 rounded-md"><a href="#bio">About Me</a></li>
+            <li class="w-1/3 text-center border bg-cyan-600 hover:opacity-100 hover:border-orange-400 opacity-80 rounded-md"><a href="#portfolio">Portfolio</a></li>
+        </nav>
+        <li class="list-none text-center w-45% border m-2 rounded-md bg-cyan-600 hover:border-orange-400 hover:opacity-100 opacity-80"><a href="#music">My Music</a></li>
+            <li class="list-none text-center w-45% border m-2 rounded-md bg-cyan-600 hover:border-orange-400 hover:opacity-100 opacity-80"><a href="#contact">Contact</a></li>
+    </header>
+
+
+    <main class=" m-8  w-100% min-h-1200 b-8-white flex flex-col justify-center">
+   
+      <!-- Bio section. About me.  -->
+        <section id="bio" class="w-full max-w-4xl min-h-100  max-h-280 bg-cyan-600 opacity-75 rounded-xl border-4 border-cyan-700 shadow-lg p-8 m-4">
+          <div class="bg-cyan-900 rounded-lg p-6 text-white">
+            <h2 class="text-3xl font-bold mb-4 text-orange-400">About Me</h2>
+            <p class="text-lg leading-relaxed mb-4">
+              Welcome to my portfolio! I'm Derek, a graphic artist, musician, music producer/engineer, and a passionate developer with a love for creating beautifully crafted UI with new and innovative digital experiences. My work spans across various technologies and creative domains.
+            </p>
+            <p class="text-lg leading-relaxed">
+              I believe in the power of clean code, thoughtful design, and user-centered solutions. 
+              Each project is an opportunity to push boundaries and create something meaningful.
+            </p>
+            
+          </div>
+        </section>
+    
+    <!-- My portfolio section where I showcase all of my work -->
+        <section id="portfolio" class="w-full max-w-4xl bg-cyan-600 opacity-95 rounded-xl flex-col border-4 border-cyan-700 shadow-lg p-1 m-4 min-h-480 max-h-570">
+        
+    <!-- Landing page  -->
+          <div class="container my-4 w-full min-h-100 bg-cyan-600 opacity-85 flex justify-center">
+            <div class="w-9/10 h-9/10 rounded border-4 border-t-white border-b-white border-l-black border-r-black h-8 bg-cyan-900 m-4 text-white text-center">
+                <h3 class="text-xl font-semibold m-1 text-orange-400">Landing Page</h3>
+                <p>Business landing page for a company named TechVenture</p>
+                <p class="m-4">Coding Languages Used:</p>
+                <button class="m-4 bg-red-500 p-2 rounded-lg">HTML</button>
+                <button class="m-4 bg-indigo-400 p-2 rounded-lg">CSS</button>
+                <div>
+                  <button class="m-8 p-4 bg-orange-400 rounded-md"><a href="./Portfolio-items/week2Lp/index.html">Click me to view project</a></button>
+
+                </div>
+            </div>
+           
+            
+        </div>
+
+    <!--      Score Board      -->
+        <div class="container my-4 w-full min-h-120 bg-cyan-600 opacity-85 flex justify-center">
+            <div class="w-9/10  h-9/10 rounded border-4 border-t-white border-b-white border-l-black border-r-black h-8 bg-cyan-900 m-4 text-white text-center">
+                <h3 class="text-xl font-semibold m-1 text-orange-400">Score Board</h3>
+                <p>An app for keeping track of points during a basketball game. Has functionality added to buttons that increment points to the total Score.</p>
+                <p class="m-4">Coding Languages Used:</p>
+                <button class="m-4 bg-red-500 p-2 rounded-lg">HTML</button>
+                <button class="m-4 bg-indigo-400 p-2 rounded-lg">CSS</button>
+                <button class="m-4 bg-yellow-400 p-2 rounded-lg">JS</button>
+                <div>
+                  <button class="m-8 p-4 bg-orange-400 rounded-md"><a href="./Portfolio-items/scoreBoard/">Click me to view project</a></button>
+                  
+                </div>
+              </div>
+              
+            </div>
+
+    <!--     Password Generator App    -->
+            <div class="container my-4 w-full min-h-120 bg-cyan-600 opacity-85 flex justify-center">
+              <div class="w-9/10 h-9/10 rounded border-4 border-t-white border-b-white border-l-black border-r-black h-8 bg-cyan-900 m-4 text-white text-center">
+                <h3 class="text-xl font-semibold m-1 text-orange-400">Password Generator App</h3>
+                <p>At the click of one button, two random passwords are generated and displayed. Each generated password can also be copied to clipboard.</p>
+                <p class="m-4">Coding Languages Used:</p>
+                <button class="m-4 bg-red-500 p-2 rounded-lg">HTML</button>
+                <button class="m-4 bg-indigo-400 p-2 rounded-lg">CSS</button>
+                <button class="m-4 bg-yellow-400 p-2 rounded-lg">JS</button>
+                <div>
+                  <button class="m-8 p-4 bg-orange-400 rounded-md"><a href="./Portfolio-items/passwordGenerator/index.html">Click me to view project</a></button>
+
+                </div>
+            </div>
+    <!-- Calculator App -->
+        </div>
+         <div class="container my-4 w-full min-h-120 bg-cyan-600 opacity-85 flex justify-center">
+            <div class="w-9/10  h-9/10 rounded border-4 border-t-white border-b-white border-l-black border-r-black h-8 bg-cyan-900 m-4 text-white text-center">
+                <h3 class="text-xl font-semibold m-1 text-orange-400">Calculator App</h3>
+                <p>A standard calculator using Javascript Classes</p>
+                <p class="m-4">Coding Languages Used:</p>
+                <button class="m-4 bg-red-500 p-2 rounded-lg">HTML</button>
+                <button class="m-4 bg-indigo-400 p-2 rounded-lg">CSS</button>
+                <button class="m-4 bg-yellow-400 p-2 rounded-lg">JS</button>
+                <div>
+                  <button class="m-8 p-4 bg-orange-400 rounded-md"><a href="./Portfolio-items/calculator/">Click me to view project</a></button>
+                  
+                </div>
+              </div>
+              
+            </div>
+        </section>
+
+        <!-- music section -->
+        <section id="music" class="w-full max-w-4xl min-h-130 bg-cyan--600  rounded-xl border-4 border-cyan-700 shadow-lg  m-4">
+          <div class="bg-cyan-900 w-full h-full rounded-lg  p-6 text-white text-right">
+            <h2 class="text-3xl font-bold mb-8 text-orange-400">My Music</h2>
+            <p class="m-3 p-2">I dont exactly have names for the songs because I lack the vocals.</p>
+            <div class="grid grid-cols-1 gap-4">
+              <div class="bg-cyan-800 p-4 rounded-lg ">
+                <h3 class="text-xl font-semibold mb-2"></h3>
+                <audio src="/music/penguin.mp3" controls class="w-full shadow-lg bg-orange-400 p-2 rounded-3xl"></audio>
+              </div>
+              <div class="bg-cyan-800 p-4 rounded-lg">
+                <h3 class="text-xl font-semibold mb-2"></h3>
+                <audio src="/music/4blue .mp3" controls class="w-full shadow-lg bg-orange-400 p-2 rounded-3xl"></audio>
+              </div>
+              <div class="bg-cyan-800 p-4 rounded-lg">
+                <h3 class="text-xl font-semibold mb-2"></h3>
+                <audio src="/music/[_3less.mp3" controls class="w-full shadow-lg bg-orange-400 p-2 rounded-3xl"></audio>
+              </div>
+             
+            </div>
+          </div>
+        </section>
+  
+         <section id="experience" class="w-full max-w-4xl bg-cyan-600 opacity-95 rounded-xl border-4 border-cyan-700 shadow-lg p-8 m-4">
+          <div class="bg-cyan-900 rounded-lg p-6 text-white">
+            <h2 class="text-3xl font-bold mb-4 text-orange-400">My Work</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-cyan-800 p-4 rounded-lg">
+                <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+                <p>Creating responsive and interactive web applications using modern technologies like React and Next.js.</p>
+              </div>
+              <div class="bg-cyan-800 p-4 rounded-lg">
+                <h3 class="text-xl font-semibold mb-2">UI/UX Design</h3>
+                <p>Designing user-centered interfaces that are both beautiful and functional.</p>
+              </div>
+              <div class="bg-cyan-800 p-4 rounded-lg">
+                <h3 class="text-xl font-semibold mb-2">Mobile Apps</h3>
+                <p>Building cross-platform mobile applications for iOS and Android.</p>
+              </div>
+              <div class="bg-cyan-800 p-4 rounded-lg">
+                <h3 class="text-xl font-semibold mb-2">Creative Coding</h3>
+                <p>Exploring the intersection of art and technology through creative programming.</p>
+              </div>
+            </div>
+          </div>
+           <div class="bg-cyan-900 my-8 rounded-lg p-6 text-white">
+            <h2 class="text-3xl font-bold mb-4 text-orange-400">My Experience</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-cyan-800 p-4 rounded-lg">
+                <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+                <p>I have been coding for almost a year now. I can say with confidence that I can code proficiently in HTML, CSS, Tailwind CSS, Javascript, and using the Command Line. This page is using Tailwindcss to style my site.  I have certifications from codeCademy that can be seen on my LinkedIn. Check the link below in the footer. I also have some experience with Python and PHP</p>
+              </div>
+              <div class="bg-cyan-800 p-4 rounded-lg">
+                <h3 class="text-xl font-semibold mb-2">Music and Production</h3>
+                <p>I have been a musician for 25 years as a percussionist, guitarist, and vocalist. I have studied Music Theory and Audio Engineering at FLCC in upstate New York where I learned how to work in a Studio utilizing both analog and digital technologies such as Logic Pro and Studio One. </p>
+              </div>
+              <div class="bg-cyan-800 p-4 rounded-lg">
+                <h3 class="text-xl font-semibold mb-2">Graphic Design</h3>
+                <p>I am a self taught Artist. I can sketch, draw and paint. Though its been some years, I have experience using CAD. I am familiar with the apps sketchbook and Amadine.</p>
+              </div>
+              <div class="bg-cyan-800 p-4 rounded-lg">
+                <h3 class="text-xl font-semibold mb-2">Creative Coding</h3>
+                <p>My favorite language to play with would have to be CSS. I love designing the layout to web pages. Now that Im familiar with Javascript, It can be really fun using script to add functionality that can change the design of a page from the users perspective. </p>
+              </div>
+            </div>
+          </div>
+           <div class="bg-cyan-900 my-8 rounded-lg p-6 text-white">
+            <h2 class="text-3xl font-bold mb-4 text-orange-400">Currently I am...</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-cyan-800 p-4 rounded-lg">
+                <h3 class="text-xl font-semibold mb-2">Learning</h3>
+                <p>React useState, useEffect, and useRef to create data driven apps using Api's.
+
+                </p>
+              </div>
+              <div class="bg-cyan-800 p-4 rounded-lg">
+                <h3 class="text-xl font-semibold mb-2">Working on</h3>
+                <p>First and Foremost, I am working on my portfolio while attending codeCademys live learning bootcamp with Tyler Lemke to showcase my skills. On the side, I am working on an App for a cannabis business to add to my portfolio and give to my friends that own a dispensary.</p>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+
+    </main>
+
+         <footer id="contact" class="w-full bg-slate-400 p-8 mt-16 rounded-sm">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-2xl font-bold text-center mb-6 text-slate-800">Get In Touch</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div class="bg-slate-300 p-4 border rounded-lg hover:border-orange-400 ">
+              <h3 class="font-semibold text-slate-800">Email</h3>
+              <p class="text-slate-600">x.iconicion.x@gmail.com</p>
+            </div>
+            <div class="bg-slate-300 p-4 rounded-lg border hover:border-orange-400">
+              <h3 class="font-semibold text-slate-800">LinkedIn</h3>
+              <p class="text-slate-600">linkedin.com/in/derek</p>
+            </div>
+            <div class="bg-slate-300 p-4 rounded-lg border hover:border-orange-400">
+              <h3 class="font-semibold text-slate-800">GitHub</h3>
+              <p class="text-slate-600">github.com/Iconic-ion/</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-100 mx-auto bg-cyan-950 container rounded-sm my-4">
+            <form action="">
+                <fieldset class="m-2 container grid justify-center w-full">
+                    <legend class="p-6 text-orange-400 text-center font-bold text-2xl">Send me a message: </legend>
+                    <label for="name" class="text-white w-100%">Whats your name?</label>
+                    <input type="text" id="name" placeholder="your name here" class="bg-cyan-100 m-4 border-cyan-700 p-1 min-w-60 max-w-90">
+                    <label for="subject" class="text-white">What's this about?</label>
+                    <input id="subject" type="text" placeholder="subject" class="bg-orange-50 m-4 p-1 border">
+                    <label for="contact-message" class="text-white"></label>
+                    <textarea name="message" id="contact-message" class="bg-blue-100 p-1 m-4" placeholder="type your message here"></textarea>
+                    <input type="submit" value="Submit" class="p-1 bg-orange-400 mx-auto rounded-sm w-1/2">
+                </fieldset>
+            </form>
+        </div>
+      </footer>
+</body>
+</html>
