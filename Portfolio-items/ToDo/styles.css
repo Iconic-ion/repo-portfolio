@@ -1,0 +1,308 @@
+* {
+    box-sizing: border-box;
+    /* border: 1px solid white; */
+}
+:root {
+  --building-color1: #aa80ff;
+  --building-color2: #66cc99;
+  --building-color3: #cc6699;
+  --building-color4: #538cc6;
+  --window-color1: #bb99ff;
+  --window-color2: #8cd9b3;
+  --window-color3: #d98cb3;
+  --window-color4: #8cb3d9;
+}
+
+body {
+ margin: 5px auto;
+ width: 80vw;
+ height: 100vh;
+background: linear-gradient( 20deg,
+        darkblue,
+        lightblue );
+    min-width: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+h1 {
+    font-family: "Mystery Quest", system-ui;
+    font-size: 5rem;
+    color: var(--building-color3);
+}
+p {
+    font-size: 1.1rem;
+}
+h1, p, #add-to-list {
+    text-align: center;
+    margin-top: 50px;
+}
+input, textarea {
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 80%;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.5);
+}
+textarea:active {
+    border: 2px solid blue;
+}
+
+#input-btn {
+    padding: 12px 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 900;
+    margin: 14px;
+    width: 50%;
+    background: linear-gradient(110deg,white,
+                                blue, white);
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.35);
+    
+}
+#input-btn:active {
+    /* box-shadow: 0px; */
+    background: linear-gradient(110deg,  white,
+    blue, blue, white);
+    border: 1px solid var(--building-color3);
+    color: rgb(0, 255, 0);
+    
+}
+.item-list-line {
+    display: flex;
+    justify-content: space-between;
+
+}
+#optional-task {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.checkoff {
+    display: flex;
+}
+#tabs {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    width: 80%;
+    padding: 20px;
+    border-bottom: 5px double var(--building-color3);
+    border-radius: 20px;
+
+
+
+}
+.tab-btn {
+    padding: 5px 10px;
+    
+    border-radius: 8px 0px 0px 0px;
+}
+.tab-btn:hover {
+    background-color: var(--building-color4);
+    color: white;
+    
+}
+.tab-btn:active {
+    color: var(--building-color3);
+}
+.tab-btn:focus {
+    background-color: var(--building-color4);
+    color: white;
+    border-radius: 15px 0px 8px 0px;
+}
+#clear-btn:hover {
+    background-color: rgb(195, 0, 0);
+}
+#item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    margin: 5px auto;
+    width: 75%;
+}
+.done {
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    border: 1px double white;
+    font-weight: 900;
+     padding: 10px;
+    
+}
+.done:hover {
+    background-color: white;
+    color: blue;
+    font-weight: 900;
+    border: 1px solid blue;
+     padding: 10px;
+}
+
+.delete {
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    border: white;
+    border: 1px double white;
+    font-weight: 900;
+     padding: 10px;
+}
+.delete:hover {
+    background-color: white;
+    color: red;
+    font-weight: 900;
+    border: 1px solid red;
+    padding: 10px;
+}
+#add-to-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0px auto;
+    padding: 10px 0px;
+    border-top: 5px double var(--building-color3);
+    border-radius: 20px;
+    /* border-right: 1px solid var(--building-color3); */
+    border-right: 4px solid var(--building-color3);
+    box-shadow: -2px 2px 3px 1px rgba(0,0,0,0.5);
+}
+/* Additional styles to complement the improved JavaScript */
+
+/* Active tab styling */
+.tab-btn.active {
+    background-color: var(--building-color4);
+    color: white;
+    border-radius: 15px 0px 8px 0px;
+    transform: scale(1.05);
+}
+
+/* Task item styling - replace #item styles */
+.task-item {
+    display: block;
+    border-bottom: 1px solid rgba(0,0,0,0.8);
+    margin: 10px auto;
+    width: 100%;
+    padding: 10px;
+    background: rgba(255,255,255,0.1);
+    
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.task-item:hover {
+    background: rgba(255,255,255,0.8);
+    transform: translateY(-2px);
+}
+
+.task-main {
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: center; */
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.task-name {
+    flex-grow: 1;
+    /* margin-right: 10px; */
+    margin: 20px;
+    font-weight: 500;
+}
+
+.task-actions {
+    display: flex;
+    gap: 5px;
+    
+}
+
+.task-description {
+    /* margin-top: 10px; */
+    padding: 8px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 4px;
+    border-left: 3px solid var(--building-color2);
+}
+
+.description-text {
+    font-style: italic;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+/* Completed task styling */
+.completed {
+    opacity: 0.9;
+}
+
+.done-text {
+    /* text-decoration: line-through; */
+    color: #666;
+}
+.done-text::before {
+    content:"✅  "
+}
+/* No tasks message */
+.no-tasks {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    padding: 20px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 75%;
+}
+
+/* Improved button animations */
+.done, .delete {
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.done:active, .delete:active {
+    transform: scale(0.95);
+}
+
+/* Loading/transition effects */
+.task-item {
+    
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Mobile responsiveness improvements */
+@media (max-width: 600px) {
+    .task-main {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .task-actions {
+        align-self: flex-end;
+    }
+    
+    #tabs {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .tab-btn {
+        border-radius: 8px;
+    }
+}
